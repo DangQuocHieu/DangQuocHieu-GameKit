@@ -1,16 +1,19 @@
-using UnityEngine;
-
-public class Singleton : MonoBehaviour
+namespace DangQuocHieu.GameKit
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    using UnityEngine;
+
+    public class Singleton<T> : MonoBehaviour where T : Component
     {
-        
+        private static T instance;
+        public static T Instance => instance;
+        protected virtual void Awake()
+        {
+            if (instance != null)
+            {
+                Destroy(instance.gameObject);
+            }
+            instance = this as T;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
