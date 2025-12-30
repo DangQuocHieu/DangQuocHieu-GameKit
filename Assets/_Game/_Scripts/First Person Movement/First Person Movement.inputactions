@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "First Person Movement",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "43c92e6c-726b-4e2c-97f0-3d087497506e",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "1ed8c252-929b-404c-bc60-9fa7607b93ae",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2598c28e-93f4-49f5-91c3-d275ef69df50",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
